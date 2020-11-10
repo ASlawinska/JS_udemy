@@ -38,8 +38,11 @@ color.unshift('yellow')
 console.log(color);
 color.push('red')
 console.log(color);
+// function loveColor(x) {
+//     // return x == "yellow" ? console.log(`Mój ulubiony color to ${x.toUpperCase()}`): console.log(`kolor obojętny to ${x}`)
+// }
 function loveColor(x) {
-    return x == "yellow" ? console.log(`Mój ulubiony color to ${x.toUpperCase()}`): console.log(`kolor obojętny to ${x}`)
+    return x == "yellow"
 }
 console.log(color.filter(loveColor));
 const coloCapitalized = color.forEach(el => console.log(el.charAt(0).toUpperCase() + el.slice(1)));
