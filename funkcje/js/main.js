@@ -32,3 +32,34 @@ const add2 = (a=5,b=20) => a+b;
 console.log(add2()); // otrzymamy wartość 25
 console.log(add2(10)); // otrzymamy 30 bo a =10 a b ma wartość domyślna 20
 console.log(add2(60,80)); // 140, obie wartości domyślne są zastępowane przez argumenty
+
+
+// operator SPREAD / REST ...
+// SPREAD  rozmarowuje tablice 
+const table = ['arg1', 'arg2', true, 50];
+console.log(...table);
+// REST z argumentów tworzy tablice
+function multiplay1 (num) {
+    return num*2;
+}
+function numbers(x, y, ...z) {
+    console.log(x, y, z);
+    console.log(z);
+    console.log(z.map(multiplay1));
+}
+numbers(23, 25, 1, 90, 2, 40)
+
+// wywołanie funckji numbers o 6 parametrach z użyciem operatora rest dla arg z powoduje że fukcja przybiera wszytskice zdefiniowane argumenty, x i y według kolejności, natomiast pozostałe elementy zostają umieszczone w tablicy. 
+
+//foreach and callback
+
+const numb = [0.5, 3, 11]
+
+const newNumb = numb.forEach(el=>console.log(el**2));
+
+const nam = ['Ania', 'Hania', 'Zosia']
+function uppercase(x) {
+    return x.toUpperCase()
+}
+const bigNam = nam.map(uppercase);
+console.log(`Imiona pisene drukowanymi literami ${bigNam}`);
