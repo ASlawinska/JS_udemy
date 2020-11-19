@@ -24,12 +24,4 @@ const liQuerrySelectorClassAll = document.querySelectorAll('.item-class');
 console.log(liQuerrySelectorClassAll);
 const liQuerrySelectorAll = document.querySelectorAll('li'); // piebiera wszytskie elementy z document 
 console.log(liQuerrySelectorAll);
-
-function name(par1,param23 ) { 
-
-    
-
-}
-
-}
-T
+// uwaga jeżeli chcemyaby automatycznie uzupełniana byla trześć o elementy dynamicznie dodane musimy używać getelementbyID getElementByTagName lub getElementByClassName

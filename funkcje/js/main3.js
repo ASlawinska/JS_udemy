@@ -52,19 +52,17 @@ function multiplay(x, y) {
 }
 // zad 5
 function whatTodo(name1, month) {
-    //let name1
-    //let month
-    switch (month) {
-        case `grudzien`||`styczen`||`luty`:
+    switch (true) {
+        case (month ==`grudzien`||month ==`styczen`||month ==`luty`):
             console.log(`${name1} jezdzi na sankach`);
             break;
-        case `marzec`||`kwiecien`||`maj`:
+        case (month ==`marzec`||month ==`kwiecien`||month ==`maj`):
             console.log(`${name1} chodzi po kaluzach`);
             break;
-        case `czerwiec`||`lipiec`||`sierpien`:
+        case (month ==`czerwiec`||month ==`lipiec`||month ==`sierpien`):
             console.log(`${name1} sie opala`);
             break;
-        case `wrzesien`||`pazdziernik`||`listopad`:
+        case (month ==`wrzesien`||month ==`pazdziernik`||month ==`listopad`):
             console.log(`${name1} zbiera liscie`);
             break;
 
