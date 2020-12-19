@@ -36,6 +36,10 @@ button:hover {
   color: #d86c08;
 }
 
+.text {
+  display: none;
+}
+
 .show {
   display: block;
 }
