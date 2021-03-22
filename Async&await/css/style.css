@@ -1,0 +1,11 @@
+body{
+    height: 100vh;
+    background: linear-gradient(#f89999, #570150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+    color: aliceblue;
+}
